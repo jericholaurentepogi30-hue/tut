@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carpe — a film appreciation site" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════ HEADER ═══════════════ -->
+  <header>
+    <a href="#hero" class="logo">Carpe</a>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#gallery">Films</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#trailers">Trailers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════ MAIN ═══════════════ -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Hero introduction">
+      <img src="perks.jpg" alt="" class="hero-img" aria-hidden="true">
+      <div class="hero-bg"></div>
+      <div class="hero-dots" aria-label="Slideshow navigation"></div>
+
+      <div class="hero-filmstrip" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <p class="hero-sub">
+        "We love films because they make us feel something. They speak to our desires... They allow us to escape and to dream."
+      </p>
+
+      <a href="#gallery" class="btn btn-solid">Explore Films</a>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" aria-label="Movie gallery">
+      <p class="section-label">Now Showing</p>
+      <h2 class="section-title">Featured Films</h2>
+      <p style="color:var(--muted); max-width:560px;">POPULAR FILMS THIS WEEK</p>
+
+      <div class="gallery-grid" id="gallery-grid" role="list"></div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <button id="show-more" class="btn btn-solid">Show More</button>
+      </div>
+    </section>
+
+    <!-- TRAILERS -->
+    <section id="trailers" aria-label="Movie trailers">
+      <p class="section-label">Watch</p>
+      <h2 class="section-title">Trailers</h2>
+      <p style="color:var(--muted); max-width:560px;">Watch official trailers from featured films.</p>
+
+      <div class="trailer-row">
+        <div class="trailer-card">
+          <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank">
+            <img src="https://img.youtube.com/vi/zSWdZVtXT7E/maxresdefault.jpg" class="trailer-thumb" alt="Trailer thumbnail">
+           <div class="play-btn">
+  <svg viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+  <path fill="red" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8z"/>
+  <polygon fill="white" points="9.75,15.5 15.5,12 9.75,8.5"/>
+</svg>
+</div>
+            <div class="trailer-info">Interstellar</div>
+          </a>
+        </div>
+
+        <div class="trailer-card">
+          <a href="https://youtu.be/ye4KFyWu2do?si=KIKVh2EYXDmEdxa7" target="_blank">
+            <img src="https://img.youtube.com/vi/ye4KFyWu2do/hqdefault.jpg" class="trailer-thumb" alt="Trailer thumbnail">
+            <div class="play-btn">
+              <svg viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                <path fill="red" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8z"/>
+                <polygon fill="white" points="9.75,15.5 15.5,12 9.75,8.5"/>
+              </svg>
+            </div>
+            <div class="trailer-info">Dead Poets Society</div>
+          </a>
+        </div>
+        
+        <div class="trailer-card">
+          <a href="https://www.youtube.com/watch?v=P6JAtpSC0EA" target="_blank">
+            <img src="https://img.youtube.com/vi/P6JAtpSC0EA/maxresdefault.jpg" class="trailer-thumb" alt="Trailer thumbnail">
+           <div class="play-btn">
+  <svg viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+  <path fill="red" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8z"/>
+  <polygon fill="white" points="9.75,15.5 15.5,12 9.75,8.5"/>
+</svg>
+</div>
+            <div class="trailer-info">Love Letter</div>
+          </a>
+        </div>
+
+        <div class="trailer-card">
+          <a href="https://www.youtube.com/watch?v=n5rh7O4IDc0" target="_blank">
+            <img src="https://img.youtube.com/vi/n5rh7O4IDc0/maxresdefault.jpg" class="trailer-thumb" alt="Trailer thumbnail">
+           <div class="play-btn">
+  <svg viewBox="0 0 24 24" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+  <path fill="red" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8z"/>
+  <polygon fill="white" points="9.75,15.5 15.5,12 9.75,8.5"/>
+</svg>
+</div>
+            <div class="trailer-info">The Perks of Being a Wallflower</div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" aria-label="Movie reviews">
+      <p class="section-label">Community</p>
+      <h2 class="section-title">Add a Review</h2>
+
+      <div class="reviews-layout">
+        <div class="review-form">
+          <div class="form-group">
+            <label for="r-name">Username</label>
+            <input type="text" id="r-name">
+          </div>
+
+          <div class="form-group">
+  <label for="r-movie">Movie Title</label>
+  <input type="text" id="r-movie" list="movie-options" autocomplete="off">
+  <datalist id="movie-options">
+    <option value="Dead Poets Society">
+    <option value="Interstellar">
+    <option value="La La Land">
+    <option value="The Perks of Being a Wallflower">
+    <option value="Fantastic Mr. Fox">
+    <option value="Love Letter">
+    <option value="The Wind Rises">
+    <option value="First Love">
+    <option value="We Made a Beautiful Bouquet">
+    <option value="April Story">
+  </datalist>
+</div>
+
+          <div class="form-group">
+            <label>Rating</label>
+            <div class="star-select" id="star-select">
+              <button class="star-btn" data-val="1">★</button>
+              <button class="star-btn" data-val="2">★</button>
+              <button class="star-btn" data-val="3">★</button>
+              <button class="star-btn" data-val="4">★</button>
+              <button class="star-btn" data-val="5">★</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="r-review">Your Review</label>
+            <textarea id="r-review"></textarea>
+          </div>
+
+          <button class="btn btn-solid" id="submit-review">Submit Review</button>
+          <p id="form-error"></p>
+        </div>
+
+        <div id="reviews-list">
+          <div class="reviews-list-header">
+            <h3>Recent Reviews</h3>
+            <span id="review-count">0 reviews</span>
+          </div>
+
+          <div id="reviews-container">
+            <p class="no-reviews">No reviews yet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Carpe</div>
+    <p class="footer-copy">© 2026 Carpe. We are Infinite.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-top">↑</button>
+
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal">
+      <button class="modal-close" id="modal-close">×</button>
+
+      <div class="modal-header">
+        <h2 class="section-title" id="modal-title"></h2>
+        <div class="modal-badges" id="modal-badges"></div>
+      </div>
+
+      <div class="modal-body">
+        <audio id="modal-audio" loop>
+    <source id="modal-audio-src" src="" type="audio/mpeg">
+  </audio>
+        <p class="modal-synopsis" id="modal-synopsis"></p>
+        <div id="modal-cast"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
