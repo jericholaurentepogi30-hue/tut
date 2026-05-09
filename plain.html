@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carpe — a film appreciation site" />
+
+  <title>Carpe</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+<h1 class="logo">
+  <a href="#hero">Carpe</a>
+</h1>
+    <nav>
+      <ul>
+        <li><a href="#gallery">Films</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#trailers">Trailers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <p>"We love films because they make us feel something. They speak to our desires... They allow us to escape and to dream."</p>
+      <a href="#gallery">Explore Films</a>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <p>Now Showing</p>
+      <h2>Featured Films</h2>
+      <p>POPULAR FILMS THIS WEEK</p>
+      <div id="gallery-grid"></div>
+      <button id="show-more">Show More</button>
+    </section>
+
+    <!-- TRAILERS -->
+    <section id="trailers">
+      <p>Watch</p>
+      <h2>Trailers</h2>
+      <p>Watch official trailers from featured films.</p>
+
+      <div>
+        <div>
+          <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank">
+            <img src="https://img.youtube.com/vi/zSWdZVtXT7E/maxresdefault.jpg" alt="Interstellar trailer">
+            <p>Interstellar</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://youtu.be/ye4KFyWu2do?si=KIKVh2EYXDmEdxa7" target="_blank">
+            <img src="https://img.youtube.com/vi/ye4KFyWu2do/hqdefault.jpg" alt="Dead Poets Society trailer">
+            <p>Dead Poets Society</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.youtube.com/watch?v=P6JAtpSC0EA" target="_blank">
+            <img src="https://img.youtube.com/vi/P6JAtpSC0EA/maxresdefault.jpg" alt="Love Letter trailer">
+            <p>Love Letter</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.youtube.com/watch?v=n5rh7O4IDc0" target="_blank">
+            <img src="https://img.youtube.com/vi/n5rh7O4IDc0/maxresdefault.jpg" alt="The Perks of Being a Wallflower trailer">
+            <p>The Perks of Being a Wallflower</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <p>Community</p>
+      <h2>Add a Review</h2>
+
+      <div>
+        <label for="r-name">Username</label>
+        <input type="text" id="r-name">
+
+        <label for="r-movie">Movie Title</label>
+        <input type="text" id="r-movie" list="movie-options" autocomplete="off">
+        <datalist id="movie-options">
+          <option value="Dead Poets Society">
+          <option value="Interstellar">
+          <option value="La La Land">
+          <option value="The Perks of Being a Wallflower">
+          <option value="Fantastic Mr. Fox">
+          <option value="Love Letter">
+          <option value="The Wind Rises">
+          <option value="First Love">
+          <option value="We Made a Beautiful Bouquet">
+          <option value="April Story">
+        </datalist>
+
+        <label>Rating</label>
+        <div id="star-select">
+          <button data-val="1">★</button>
+          <button data-val="2">★</button>
+          <button data-val="3">★</button>
+          <button data-val="4">★</button>
+          <button data-val="5">★</button>
+        </div>
+
+        <label for="r-review">Your Review</label>
+        <textarea id="r-review"></textarea>
+
+        <button id="submit-review">Submit Review</button>
+        <p id="form-error"></p>
+      </div>
+
+      <div id="reviews-list">
+        <h3>Recent Reviews</h3>
+        <span id="review-count">0 reviews</span>
+        <div id="reviews-container">
+          <p>No reviews yet.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>Carpe</div>
+    <p>© 2026 Carpe. We are Infinite.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-top">↑</button>
+
+
+</body>
+</html>
